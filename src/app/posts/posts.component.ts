@@ -12,7 +12,9 @@ export class PostsComponent {
 
   constructor(private postService: PostService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.getPosts();
+  }
 
   getPosts(): void {
     this.postService.getPosts().subscribe((posts) => (this.posts = posts));
