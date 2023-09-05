@@ -11,6 +11,7 @@
 
 .posts li:hover {
   left: 0.1em;
+  right: 0.1em;
 }
 
 .posts a {
